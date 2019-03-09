@@ -1,5 +1,7 @@
-
+import datetime
 import random
+import math
+import statistics
 
 numbers = []
 for x in range(0, 29):
@@ -17,13 +19,21 @@ numbers.sort()
 suma = 0
 for x in range(0, 29):
     suma = suma + numbers[x]
-print("srednia wektora: ", suma/30)
+srednia = suma/30
+print("srednia wektora: ", srednia)
+#odchylenie standard
+odchylenieStandardowe = statistics.stdev(numbers)
+# wektor znormalizowany
 wektorZnormalizowany = []
 for x in range(0, 29):
     wZ = (numbers[x]-najmniejsza)/(najwieksza-najmniejsza)
     wektorZnormalizowany.append(wZ)
 for x in range(0, 29):
     print(wektorZnormalizowany[x])
-    
-
-
+#wektor standaryzowany
+wektorStandaryzowany = []
+for x in range(0, 29):
+    wS = (numbers[x]-srednia)/odchylenieStandardowe
+    wektorStandaryzowany.append(wS)
+for x in range(0, 29):
+    print(wektorStandaryzowany[x])
