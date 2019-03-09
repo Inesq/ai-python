@@ -1,6 +1,8 @@
-name= input("podaj imie i nazwisko: ")
-tablica_slow = name.split(" ")
-print(tablica_slow)
-imie = tablica_slow[0]
-nazwisko = tablica_slow[1]
-print('Długosc imienia to: ', len(imie))
+import datetime
+import random
+import math
+import statistics
+
+
+x = datetime.datetime.now()
+print("Dzisiaj jest ", x.timetuple().tm_yday," ", x.date().year, " roku")

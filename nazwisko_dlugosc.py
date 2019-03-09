@@ -1,9 +1,7 @@
-
-
-numbers[30]
-print(position)
-for x in range(0, 29):
-    randomNumber = random.randrange(100)
-    numbers = randomNumber
-for x in range(0, 29):
-    print(numbers[x])
+name = input("Podaj imie i nazwisko: ")
+tablica_slow = name.split(" ")
+print(tablica_slow)
+imie = tablica_slow[0]
+nazwisko = tablica_slow[1]
+print('Dlugosc imienia: ', len(imie))
+print('Nazwisko malymi literami: ', nazwisko.lower())
