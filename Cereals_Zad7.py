@@ -15,5 +15,5 @@ import pandas as pd
 dane=pd.read_csv('cereal.csv')
 print(dane)#wyswietlanie csv po wczytaniu przez "pande"
 print(dane.dtypes)#wyswietlanie typow danych
-print(dane.iloc[[1]])#wuswietla wiersz (tutaj o nuemrze jeden)
-print(dane['protein'])#wuswietla kolumne o podanej nazwie
+print(dane.iloc[[1]])#wyswietla wiersz (tutaj o nuemrze jeden)
+print(dane['protein'])#wyswietla kolumne o podanej nazwie
